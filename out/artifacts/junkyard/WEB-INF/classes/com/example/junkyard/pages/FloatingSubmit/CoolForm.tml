@@ -1,0 +1,74 @@
+<html t:type="layout" title="Ajax Uploader"
+      t:sidebarTitle="AjaxUplader"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter"
+      xmlns:j="tapestry-library:jquery">
+<!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+<head>
+    <link href="${context:style/junkyard.css}" rel="stylesheet" type="text/css"/>
+
+    <Style>
+        .isSubmit {position:absolute;
+        bottom:10px;
+        right:15px;
+        }
+
+    </Style>
+    <Script Language="JavaScript">
+
+        var xV = 0;
+
+        function validate(isForm,isName){
+
+        isValid = false;
+        tmp = document.getElementsByName(isName);
+        for (i=0; i < tmp.length; i++)
+        {if (tmp[i].checked == true){isValid = true}}
+        if (isValid == false){alert('Choose the search format')}
+        else {Form1.submit()}
+        }
+
+        function stayHome(){
+
+        nV = document.body.scrollTop;
+        document.getElementById('submitBtn').style.top = nV+xV;
+        }
+
+        window.onscroll=stayHome;
+        window.onload=function(){xV = document.getElementById('submitBtn').offsetTop}
+
+    </Script>
+</head>
+<p>Tapestry 5 Ajax-JQuery Upload Demo</p><br/>
+
+<div class="container">
+    <div class="row">
+        <div class="twelve columns">
+
+
+            <Form name='Form1' method='post' action='isSearch.html'>
+                <input type='radio' name='search'>Barquentine
+                <input type='radio' name='search'>Brig
+                <input type='radio' name='search'>Brigantine
+                <input type='radio' name='search'>Full Rig
+                <input type='radio' name='search'>Schooner
+                <input type='radio' name='search'>Topsail
+                <input type='button' value="Submit" class='isSubmit' id='submitBtn' onClick="validate(this.form,'search')">
+            </Form>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
+
+</html>
+

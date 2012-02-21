@@ -1,0 +1,99 @@
+<html t:type="layout" title="Foundation Forms Demo"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+<!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+<p>Foundation Forms Demo</p><br/>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="four columns">
+            <div class="panel">
+                <h5>Good Form</h5>
+                <p>Lets see how Foundation forms look.</p>
+
+                <ul>
+                    <li>
+                        <t:pagelink page="formsdemo/createaddress">Create new address</t:pagelink>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="four columns">
+            <div class="panel">
+                <h5>Keeping Tabs</h5>
+
+                <p>Foundation tabs can organize our reports.</p>
+                <ul>
+                    <li>
+                        <t:pagelink page="formsdemo/AllTabs">View Tabs</t:pagelink>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="four columns">
+
+            <div id="myModal" class="reveal-modal">
+                <h2>Awesome. I have it.</h2>
+
+                <p class="lead">Your couch. My feet.</p>
+
+                <p>Im a cool paragraph that lives inside of an even cooler modal. Winning!</p>
+                <a class="close-reveal-modal">&#215;</a>
+            </div>
+
+
+            <div class="panel">
+                <h5>Amazing Dialog</h5>
+
+                <p>Hey, What would a Foundation Dialog Box look like?.</p>
+                <ul>
+                    <li>
+                        <a href="#" data-reveal-id="myModal">Click Me For A Modal</a>
+
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="four columns">
+            <div class="panel">
+                <h5>Foundation of errors</h5>
+
+                <p>Lets try to integrate foundation's error formatting.</p>
+
+                <ul>
+                    <li>
+                        <t:pagelink page="formsdemo/NoValidationBubbles2">Foundation Error Formatting</t:pagelink>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="two columns">
+            <t:pagelink class="nice medium radius black button"
+                        page="index">Back
+            </t:pagelink>
+
+        </div>
+        <div class="five columns" align="right">
+                                  <span class="has-tip bottom" id="interestingTip" data-width="210"
+                                        title="Never underestimate stupid people in large groups."><small>Words to live by</small>  </span>
+
+        </div>
+    </div>
+
+</div>
+
+
+</html>

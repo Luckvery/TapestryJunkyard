@@ -1,0 +1,129 @@
+<html t:type="layout" title="Event DashBoard"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+<!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+<p>EVENT DASHBOARD</p>
+
+
+
+
+ <table>
+     <tr>
+         <td>Position Of Event</td><td></td>       <td>Name Of Event</td><td></td>
+     </tr>
+     <t:loop t:id="FinalEventPath" t:value="currentEvent">
+         <tr>
+             <td>{PositionOfEvent}</td><td></td><td>{NameOfEvent}</td><td></td>
+         </tr>
+     </t:loop>
+
+</table>
+
+<!--
+<tr>
+     <td>onActivate</td><td></td>
+</tr>
+<tr>
+
+     <td>onPassivate</td><td></td>
+</tr>
+<tr>
+
+     <td>onPrepare</td><td></td>
+</tr>
+<tr>
+
+     <td>onSuccess</td><td></td>
+</tr>
+<tr>
+
+     <td>onFailure</td><td></td>
+</tr>
+<tr>
+
+     <td>onValidate</td><td></td>
+</tr>
+<tr>
+
+     <td>onAction</td><td></td>
+</tr>
+<tr>
+
+     <td>pageLoaded</td><td></td>
+</tr>
+<tr>
+
+     <td>pageAttached</td><td></td>
+</tr>
+<tr>
+
+     <td>pageLoaded</td><td></td>
+</tr>
+<tr>
+
+     <td>pageReset</td><td></td>
+</tr>
+<tr>
+
+     <td>setupRender</td><td></td>
+</tr>
+<tr>
+
+     <td>beginRender</td><td></td>
+</tr>
+<tr>
+
+     <td>beforeRenderTemplate</td><td></td>
+</tr>
+<tr>
+
+     <td>renderTemplate</td><td></td>
+</tr>
+<tr>
+
+     <td>beforeRenderBody</td><td></td>
+</tr>
+<tr>
+
+     <td>afterRenderTemplate</td><td></td>
+</tr>
+<tr>
+
+     <td>afterRender</td><td></td>
+</tr>
+<tr>
+
+    <td>cleanUpRender</td><td></td>
+</tr>
+
+
+<t:form t:id="JunkyardHostForm" context="host">
+    <button type="submit" id="saveHost" class="btn primary">Ping Host</button>
+</t:form>
+-->
+
+
+
+<!-- A Zone is a component that can be updated in place, triggered by other components.
+<t:zone t:id="zone">
+    <p>
+        hey! <strong>${telltheworld}</strong> times.
+    </p>
+
+    <p>
+        [
+        <t:actionlink t:id="increment">increment</t:actionlink>
+        ]
+        &nbsp;
+        [
+        <t:actionlink t:id="incrementAjax" zone="^">increment (via Ajax)</t:actionlink>
+        ]
+    </p>
+
+</t:zone>
+-->
+
+
+</html>

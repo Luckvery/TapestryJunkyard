@@ -1,0 +1,22 @@
+<!--
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+    <include file="com/starpoint/helpdesk/db/changelog/db.generated.xml"/>
+    <include file="com/starpoint/helpdesk/db/changelog/db.restructure.xml"/>
+    <include file="com/starpoint/helpdesk/db/changelog/db.devdata.xml"/>
+    <include file="com/starpoint/helpdesk/db/changelog/db.reqalias.xml"/>
+    <include file="com/starpoint/helpdesk/db/changelog/db.emaildestview.xml"/>
+    <include file="com/starpoint/helpdesk/db/changelog/db.updatedates.xml"/>
+    <include file="com/starpoint/helpdesk/db/changelog/db.headerchecks.xml"/>
+    <include file="com/starpoint/helpdesk/db/changelog/db.foreignkeys.xml"/>
+    <include file="com/starpoint/helpdesk/db/changelog/db.networkIPs.xml"/>
+    <include file="com/starpoint/helpdesk/db/changelog/db.domains.xml"/>
+    <include file="com/starpoint/helpdesk/db/changelog/db.hosts.xml"/>
+    <include file="com/starpoint/helpdesk/db/changelog/db.alias.xml"/>
+</databaseChangeLog>
+-->

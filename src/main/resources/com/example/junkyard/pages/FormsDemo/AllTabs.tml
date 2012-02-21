@@ -1,0 +1,70 @@
+<html t:type="layout" title="Create New Address"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="eight columns">
+            <dl class="tabs contained">
+                <dd><a href="#simpleContained1" class="active">Simple Tab 1</a></dd>
+                <dd><a href="#simpleContained2">Simple Tab 2</a></dd>
+                <dd><a href="#simpleContained3">Simple Tab 3</a></dd>
+            </dl>
+
+            <ul class="tabs-content contained">
+                <li class="active" id="simpleContained1Tab">
+
+                    This is simple tab 1's content. Pretty neat, huh?
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><dd><a href="#simpleContained1" >Section 1</a></dd></td>
+                            <td>This is longer content</td>
+                            <td>Content</td>
+                            <td>Content</td>
+                        </tr>
+                        <tr>
+                            <td><dd><a href="#simpleContained2" >Section 2</a></dd></td>
+                            <td>This is longer content</td>
+                            <td>Content</td>
+                            <td>Content</td>
+                        </tr>
+                        <tr>
+                            <td><dd><a href="#simpleContained3" >Section 3</a></dd></td>
+                            <td>This is longer content</td>
+                            <td>Content</td>
+                            <td>Content</td>
+                        </tr>
+                         </tbody>
+                    </table>
+                </li>
+                <li id="simpleContained2Tab">This is simple tab 2's content. Now you see it!</li>
+                <li id="simpleContained3Tab">This is simple tab 3's content. It's, you know...okay.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        <div class="two columns">
+            <t:pagelink class="nice medium radius black button"
+                        page="formsdemo/foundationformsdemo">Back
+            </t:pagelink>
+
+        </div>
+    </div>
+
+</div>
+
+
+</html>

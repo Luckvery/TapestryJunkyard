@@ -1,0 +1,35 @@
+<html t:type="layout" title="DataTables Demo"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+<!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+<p>Datatables Demo</p>
+
+<table >
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+    </tr>
+    <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+    </tr>
+    <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+    </tr>
+</table>
+
+<t:jquery.datatable t:source="celebritySource" rowsPerPage="5"
+                    exclude="id, biography, birthDateVerified"
+                    reorder="lastName,firstName,occupation,dateOfBirth" t:options="options"
+                    t:mode="false" t:model="model" t:row="current" t:tableInformation="tableInformation">
+    <p:firstNameHeader>First Name</p:firstNameHeader>
+    <p:firstNameCell>${current?.firstName}</p:firstNameCell>
+</t:jquery.datatable>
+
+
+
+
+</html>

@@ -1,0 +1,66 @@
+<html t:type="layout" title="Ajax Uploader"
+      t:sidebarTitle="AjaxUplader"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter"
+      xmlns:j="tapestry-library:jquery">
+<!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+<head>
+<link href="${context:style/junkyard.css}" rel="stylesheet" type="text/css"/>
+</head>
+<p>Tapestry 5 Ajax-JQuery Upload Demo</p><br/>
+
+<div class="container">
+    <div class="row">
+        <div class="twelve columns">
+
+            <j:ajaxUpload t:id="uploadImage"
+                          t:multiple="true"
+                          t:allowedExtensions="[jpg, png, gif,txt]"
+                          t:sizeLimit="1M"> <!-- The units K, M and G are valid for size limits. Anything else will be treated as 0 -->
+                <noscript>
+                    <p>JavaScript must be activated!</p>
+                </noscript>
+            </j:ajaxUpload>
+
+            <t:zone t:id="uploadResult">
+                <div class="row">
+                    <div class="twelve columns">
+                        <t:if test="message">
+                            <p>
+                                <strong>${message}</strong>
+                            </p>
+                        </t:if>
+
+                        <t:if test="uploadedFiles">
+                            <h4>Uploaded files</h4>
+
+                            <t:grid t:id="display"  source="uploadedFiles"></t:grid>
+                        </t:if>
+                    </div>
+                </div>
+            </t:zone>
+
+        </div>
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="two columns">
+            <t:pagelink class="nice medium radius black button"
+                        page="index">Back
+            </t:pagelink>
+
+        </div>
+        <div class="five columns" align="right">
+                                  <span class="has-tip bottom" id="interestingTip" data-width="210"
+                                        title="Never underestimate stupid people in large groups."><small>Words to live by</small>  </span>
+
+        </div>
+    </div>
+
+</div>
+
+
+</html>

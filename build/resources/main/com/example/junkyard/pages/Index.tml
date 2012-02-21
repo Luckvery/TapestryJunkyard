@@ -1,0 +1,79 @@
+<html t:type="layout" title="junkyard Index"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+<!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+
+<!--
+<t:pagelink page="/DashBoard" >DashBoard</t:pagelink>
+A Zone is a component that can be updated in place, triggered by other components. -->
+
+<table align="center" bgcolor="white">
+
+    <tr>
+        <td align="center">
+            <hr></hr>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" >
+
+            <t:pagelink t:id = "formsDemo" class="nice medium radius black button" page="formsdemo/foundationformsdemo" >Super Forms Demo</t:pagelink>
+
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <hr></hr>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" >
+            <t:pagelink t:id = "datatables" class="nice medium radius black button"  page="datatables/datatablesdemo" >Datatables Demo</t:pagelink>
+
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <hr></hr>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" >
+            <t:pagelink t:id = "eventdashboard" class="nice medium radius black button"  page="dashboard/eventdashboard" >Event DashBoard</t:pagelink>
+
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <hr></hr>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <t:zone t:id="zone">
+
+                <p>
+                    [
+                    <t:actionlink t:id="increment">increment</t:actionlink>
+                    ]
+                    &nbsp;
+                    [
+                    <t:actionlink t:id="incrementAjax" zone="^">increment (via Ajax)</t:actionlink>
+                    ]
+                </p>
+
+            </t:zone>
+        </td>
+    </tr>
+</table>
+
+<br></br>
+<br></br><br></br>
+<br></br><br></br>
+<br></br><br></br>
+
+
+</html>
