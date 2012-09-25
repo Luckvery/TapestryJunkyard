@@ -10,25 +10,38 @@
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
 
-
     <!-- IE Fix for HTML5 Tags -->
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+
 
 </head>
 <body>
 
 <div class="container">
     <div class="row">
-        <div class="eight columns">
+        <div  class="span12">
             <h4>Russell's Junk Yard</h4>
-            <a href="http://www.zurb.com/playground/orbit-jquery-image-slider">View Docs + Playground for Orbit</a>
 
+            <img src="${context:images/zombiecat.jpg}"
+                 alt="Junk is Junk!"/>
 
-            <div id="featured" class="orbit-wrapper" style="width: Inherit; height: Inherit;">
+         <!--
+             Tony doesn't like this
+         <div id="featured" class="orbit-wrapper" style="width: Inherit; height: Inherit;">
+                <img src="${context:images/junkyard_header7.jpg}"
+                     alt="Junk is Junk!"/>
+                <img src="${context:images/junkyard_header8.jpg}"
+                     alt="Junk is Junk!"/>
 
-
+                <img src="${context:images/junkyard_header5.jpg}"
+                     alt="Junk is Junk!"/>
+                <img src="${context:images/junkyard_header6.jpg}"
+                     alt="Junk is Junk!"/>
+                <img src="${context:images/junkyard_header4.jpg}"
+                     alt="Junk is Junk!"/>
                 <img src="${context:images/junkyard_header1.jpg}"
                      alt="Any old Junk"/>
                 <img src="${context:images/junkyard_header2.jpg}"
@@ -36,21 +49,24 @@
                 <img src="${context:images/junkyard_header3.jpg}"
                      alt="Junk is Junk!"/>
 
+
                 <span class="orbit-caption" id="htmlCaption">This site is for testing random components and features of anything Russell can think of!</span>
-            </div>
-        </div> <br clear="all"></br>
+               <br/>
+            </div>-->
+        </div>
+        <br clear="all"></br>
 
 
-
-
-
-<t:body/>
-</div></div>
-<div class="nav-bottom" width="660">
+        <t:body/>
+    </div>
+  </div>    <br/><br/><br/>
+<div class="row">
+<div class="span12">
+    <i>${randomQuote}</i>
 
     <!-- company name -->
 </div>
-
+     </div>
 
 </body>
 </html>

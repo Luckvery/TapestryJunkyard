@@ -22,10 +22,15 @@
 
 <div class="container">
     <div class="row">
-        <div class="eight columns">
+        <div  class="span12">
             <h4>Russell's Junk Yard</h4>
 
-            <div id="featured" class="orbit-wrapper" style="width: Inherit; height: Inherit;">
+            <img src="${context:images/zombiecat.jpg}"
+                 alt="Junk is Junk!"/>
+
+         <!--
+             Tony doesn't like this
+         <div id="featured" class="orbit-wrapper" style="width: Inherit; height: Inherit;">
                 <img src="${context:images/junkyard_header7.jpg}"
                      alt="Junk is Junk!"/>
                 <img src="${context:images/junkyard_header8.jpg}"
@@ -47,7 +52,7 @@
 
                 <span class="orbit-caption" id="htmlCaption">This site is for testing random components and features of anything Russell can think of!</span>
                <br/>
-            </div>
+            </div>-->
         </div>
         <br clear="all"></br>
 
@@ -56,11 +61,9 @@
     </div>
   </div>    <br/><br/><br/>
 <div class="row">
-<div class="eight columns">
+<div class="span12">
     <i>${randomQuote}</i>
-    <script type="text/javascript">
-    document.write(product(4,3));
-</script>
+
     <!-- company name -->
 </div>
      </div>

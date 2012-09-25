@@ -8,8 +8,10 @@ import org.apache.tapestry5.ioc.OrderedConfiguration;
 import org.apache.tapestry5.ioc.ServiceBinder;
 import org.apache.tapestry5.ioc.annotations.Contribute;
 import org.apache.tapestry5.ioc.annotations.Primary;
+import org.apache.tapestry5.ioc.annotations.SubModule;
 import org.apache.tapestry5.services.*;
 import org.apache.tapestry5.services.transform.ComponentClassTransformWorker2;
+import uk.org.cezary.t5conduit.T5ConduitModule;
 
 
 /**
@@ -17,6 +19,7 @@ import org.apache.tapestry5.services.transform.ComponentClassTransformWorker2;
  * Tapestry, or to place your own service definitions. See
  * http://tapestry.apache.org/5.3.1/tapestry-ioc/module.html
  */
+@SubModule(T5ConduitModule.class)
 public class AppModule {
 
 

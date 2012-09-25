@@ -1,12 +1,14 @@
 package com.example.junkyard.pages;
 
-import com.example.junkyard.model.Address;
 import com.example.junkyard.pages.DashBoard.EventDashBoard;
 import com.example.junkyard.pages.DataTables.DataTablesDemo;
 import com.example.junkyard.pages.FormsDemo.FoundationFormsDemo;
 import org.apache.tapestry5.SymbolConstants;
 import org.apache.tapestry5.alerts.AlertManager;
-import org.apache.tapestry5.annotations.*;
+import org.apache.tapestry5.annotations.InjectComponent;
+import org.apache.tapestry5.annotations.InjectPage;
+import org.apache.tapestry5.annotations.Persist;
+import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.corelib.components.Zone;
 import org.apache.tapestry5.ioc.annotations.Inject;
 import org.apache.tapestry5.ioc.annotations.Symbol;
@@ -16,6 +18,7 @@ import java.util.Date;
 /**
  * Start page of application junkyard.
  */
+
 public class Index
 {
     @Property
@@ -23,13 +26,9 @@ public class Index
     @Symbol(SymbolConstants.TAPESTRY_VERSION)
     private String tapestryVersion;
 
-    @InjectComponent
-    private Zone zone;
-
-    @Persist
     @Property
+    @Persist
     private int clickCount;
-
 
     @Property
     private String tellTheWorld;
@@ -37,6 +36,8 @@ public class Index
     @Inject
     private AlertManager alertManager;
 
+    @InjectComponent
+    private Zone zone;
 
     @InjectPage
     private EventDashBoard newEventDashBoard;
@@ -47,9 +48,11 @@ public class Index
     @InjectPage
     private FoundationFormsDemo newFormsDemo;
 
+/*
     @PageActivationContext
     @Property
     private Address address;
+*/
 
 
 
@@ -105,11 +108,11 @@ public class Index
 
     }
 
-    @Log
+/*    @Log
     void onActivate(){
         if(address == null) {
             address = new Address();
         }
-    }
+    }*/
 
 }

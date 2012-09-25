@@ -1,0 +1,38 @@
+
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter" >
+
+<head>
+    <style type="text/css">
+        .even { background:#FFF3D1 none repeat scroll 0%;
+            margin:0pt; padding:0pt; }
+        .odd { background:white none
+        repeat scroll 0%; margin:0pt; padding:0pt; }
+    </style>
+</head>
+<h1>An example on the Grid Component</h1>
+This example has the following features.
+<ul>
+    <LI>Row count</LI>
+    <li>Custom column</li>
+    <li>Custom formater for column</li>
+</ul>
+
+
+
+<table t:id="myGrid" t:type="Grid" source="accessList"
+       row="access" model="beanModel" pagerPosition="literal:both"
+       rowsPerPage="${noOfRowsPerPage}"
+       reorder="literal:rowNo,remoteHost,accessTime,country,browser,os"
+       rowClass="prop:myRowClass">
+
+    <p:rowNoCell>
+        ${rowNo}
+    </p:rowNoCell>
+
+    <p:accessTimeCell>
+        ${accessTime}
+    </p:accessTimeCell>
+</table>
+
+</html>

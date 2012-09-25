@@ -5,54 +5,74 @@
   </component>
   <component name="ArtifactManager">
     <artifact type="exploded-war" build-on-make="true" name="junkyard">
-      <output-path>$PROJECT_DIR$/out/artifacts/junkyard</output-path>
+      <output-path>$PROJECT_DIR$/build/artifacts/junkyard</output-path>
       <root id="root">
         <element id="directory" name="WEB-INF">
           <element id="directory" name="classes">
             <element id="module-output" name="junkyard" />
           </element>
           <element id="directory" name="lib">
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/org.apache.tapestry/tapestry-core/jars/tapestry-core-5.3.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/org.antlr/antlr-runtime/jars/antlr-runtime-3.3.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/org.antlr/stringtemplate/jars/stringtemplate-3.2.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/antlr/antlr/jars/antlr-2.7.7.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/commons-codec/commons-codec/jars/commons-codec-1.5.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/org.apache.tapestry/tapestry-json/jars/tapestry-json-5.3.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/org.apache.tapestry/tapestry-ioc/jars/tapestry-ioc-5.3.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.6.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.6.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/log4j/log4j/bundles/log4j-1.2.16.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/javax.inject/javax.inject/jars/javax.inject-1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/org.apache.tapestry/tapestry5-annotations/jars/tapestry5-annotations-5.3.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/org.apache.tapestry/tapestry-func/jars/tapestry-func-5.3.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/org.apache.tapestry/plastic/jars/plastic-5.3.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/javassist/javassist/jars/javassist-3.12.1.GA.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/org.apache.tapestry/tapestry-yuicompressor/jars/tapestry-yuicompressor-5.3.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/com.yahoo.platform.yui/yuicompressor/jars/yuicompressor-2.4.6.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/cache/rhino/js/jars/js-1.6R7.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/org.apache.tapestry/tapestry-core/5.3.1/jar/tapestry-core-5.3.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/org.apache.tapestry/tapestry-yuicompressor/5.3.1/jar/tapestry-yuicompressor-5.3.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/096634748426ce40c1735a33781037b7/org.got5/tapestry5-jquery/3.0.0/jar/tapestry5-jquery-3.0.0.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/antlr/antlr/2.7.7/jar/antlr-2.7.7.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/org.antlr/stringtemplate/3.2.1/jar/stringtemplate-3.2.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/org.antlr/antlr-runtime/3.3/jar/antlr-runtime-3.3.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/commons-codec/commons-codec/1.5/jar/commons-codec-1.5.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/org.apache.tapestry/tapestry-json/5.3.1/jar/tapestry-json-5.3.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/org.slf4j/slf4j-api/1.6.1/jar/slf4j-api-1.6.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/log4j/log4j/1.2.16/bundle/log4j-1.2.16.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/org.slf4j/slf4j-log4j12/1.6.1/jar/slf4j-log4j12-1.6.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/javax.inject/javax.inject/1/jar/javax.inject-1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/org.apache.tapestry/tapestry5-annotations/5.3.1/jar/tapestry5-annotations-5.3.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/org.apache.tapestry/plastic/5.3.1/jar/plastic-5.3.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/javassist/javassist/3.12.1.GA/jar/javassist-3.12.1.GA.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/org.apache.tapestry/tapestry-func/5.3.1/jar/tapestry-func-5.3.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/org.apache.tapestry/tapestry-ioc/5.3.1/jar/tapestry-ioc-5.3.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/rhino/js/1.6R7/jar/js-1.6R7.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/com.yahoo.platform.yui/yuicompressor/2.4.6/jar/yuicompressor-2.4.6.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/commons-io/commons-io/2.0.1/jar/commons-io-2.0.1.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/commons-fileupload/commons-fileupload/1.2.2/jar/commons-fileupload-1.2.2.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/org.apache.tapestry/tapestry-upload/5.3/jar/tapestry-upload-5.3.jar" />
-            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-7/artifacts/56865c09425cc6ecda8606d7e6035ceb/commons-lang/commons-lang/2.6/jar/commons-lang-2.6.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/tapestry-yuicompressor/5.3.1/jar/9cfa25f67af56ba5c44d064a03897bd4898dbb14/tapestry-yuicompressor-5.3.1.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/tapestry-core/5.3.2/jar/8c4e471736143f64d3bb51de2cc17aea1d38f91d/tapestry-core-5.3.2.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/tapestry-upload/5.3.2/jar/9b631d1b9c47a00d131fa7486267a9ea1d36130f/tapestry-upload-5.3.2.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.got5/tapestry5-jquery/3.2.0/jar/b719a19faa8af4b31a080e8a7bf18b800778bf51/tapestry5-jquery-3.2.0.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.hibernate/hibernate-validator/4.1.0.Final/jar/785cceeb0b0dbd03367f45cd60eb26cd48167640/hibernate-validator-4.1.0.Final.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.hibernate/hibernate-commons-annotations/3.2.0.Final/jar/ce990611448fc2865469e3b68d2fe76b050e3c4f/hibernate-commons-annotations-3.2.0.Final.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/commons-beanutils/commons-beanutils/1.8.3/jar/686ef3410bcf4ab8ce7fd0b899e832aaba5facf7/commons-beanutils-1.8.3.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/commons-collections/commons-collections/3.2.1/jar/761ea405b9b37ced573d2df0d1e3a4e0f9edc668/commons-collections-3.2.1.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.commons/commons-email/1.2/jar/6cd5d2b5c11d2898b901e3162d825b804699187d/commons-email-1.2.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/commons-lang/commons-lang/2.6/jar/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/commons-validator/commons-validator/1.3.1/jar/d1fd6b1510f25e827adffcf17de3c85fa00e9391/commons-validator-1.3.1.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/commons-net/commons-net/3.0.1/jar/643cc426b9f75aa111fac0fac0e52ff5d991a337/commons-net-3.0.1.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/oro/oro/2.0.8/jar/5592374f834645c4ae250f4c9fbb314c9369d698/oro-2.0.8.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.poi/poi/3.7/jar/581aca996554d760c02b281ac1f9efb785de54be/poi-3.7.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/com.starpoint/sp-common/1.0.0-SNAPSHOT/jar/c1ab2d809fb3044fe750dbaeed5e59b79949c012/sp-common-1.0.0-SNAPSHOT.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.codehaus.groovy/groovy-all/1.8.6/jar/96a26bfa6e5aea2e3c46df44a19de93a2acd2366/groovy-all-1.8.6.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/antlr/antlr/2.7.7/jar/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.antlr/stringtemplate/3.2.1/jar/59ec8083721eae215c6f3caee944c410d2be34de/stringtemplate-3.2.1.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.antlr/antlr-runtime/3.3/jar/ccd65b08cbc9b7e90b9facd4d125a133c6f87228/antlr-runtime-3.3.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/commons-codec/commons-codec/1.5/jar/cf993e250ff71804754ec2734a16f23c0be99f70/commons-codec-1.5.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/tapestry-json/5.3.2/jar/7223ee5a3816b881ee99ccbce9927695a9ead463/tapestry-json-5.3.2.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/log4j/log4j/1.2.16/bundle/7999a63bfccbc7c247a9aea10d83d4272bd492c6/log4j-1.2.16.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/plastic/5.3.2/jar/da1463d79f579280d02e09fac5911517a1509ce3/plastic-5.3.2.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.slf4j/slf4j-api/1.6.1/jar/6f3b8a24bf970f17289b234284c94f43eb42f0e4/slf4j-api-1.6.1.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.slf4j/slf4j-log4j12/1.6.1/jar/bd245d6746cdd4e6203e976e21d597a46f115802/slf4j-log4j12-1.6.1.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/javax.inject/javax.inject/1/jar/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/tapestry5-annotations/5.3.2/jar/5e6df7182de8dfd2c36b86e908f620dd4bd3e2d5/tapestry5-annotations-5.3.2.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/tapestry-func/5.3.2/jar/cdad284a817f226bb2e7629c64021b554b1fd461/tapestry-func-5.3.2.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/javassist/javassist/3.12.1.GA/jar/526633327faa61aee448a519e8a4d53ec3057885/javassist-3.12.1.GA.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/tapestry-ioc/5.3.2/jar/35f59cf86af8df8675241a0aaa280f63100f78cc/tapestry-ioc-5.3.2.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/rhino/js/1.6R7/jar/77e5e566457426095c743be207cba53a2391dffa/js-1.6R7.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/com.yahoo.platform.yui/yuicompressor/2.4.6/jar/5b8477e867040ba58b6c8a7ac6deb6da22109237/yuicompressor-2.4.6.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/commons-io/commons-io/2.0.1/jar/7ffdb02f95af1c1a208544e076cea5b8e66e731a/commons-io-2.0.1.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/commons-fileupload/commons-fileupload/1.2.2/jar/1e48256a2341047e7d729217adeec8217f6e3a1a/commons-fileupload-1.2.2.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/javax.validation/validation-api/1.0.0.GA/jar/b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e/validation-api-1.0.0.GA.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/commons-logging/commons-logging/1.1.1/jar/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/javax.activation/activation/1.1/jar/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/javax.mail/mail/1.4.1/jar/8b7bc69010655425dabf091b51d1e90b4de36715/mail-1.4.1.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/xml-apis/xml-apis/1.0.b2/jar/3136ca936f64c9d68529f048c2618bd356bf85c9/xml-apis-1.0.b2.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/commons-digester/commons-digester/1.6/jar/e2822f655f2c182681c2cf27f224a425ccb2983d/commons-digester-1.6.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.mvel/mvel2/2.0.19/jar/deb8ba40190544e7f85e7abec6a9847f7ba3d943/mvel2-2.0.19.jar" />
+            <element id="file-copy" path="$MAVEN_REPOSITORY$/com/trsvax/bootstrap/tapestry-bootstrap/2.0-SNAPSHOT/tapestry-bootstrap-2.0-SNAPSHOT.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/tapestry-yuicompressor/5.3.2/jar/9293eb2ac8a16fc7177ac05bb307fb8a5979b363/tapestry-yuicompressor-5.3.2.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/tapestry-core/5.3.4/jar/7a7b23c338be531fb8f961a73e712dbf0bd6b9c6/tapestry-core-5.3.4.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/tapestry-upload/5.3.4/jar/27f162cacea3eb1f37e944d75877d87f7f358300/tapestry-upload-5.3.4.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.got5/tapestry5-jquery/3.3.0/jar/9c61e0ada4117344d0b596063591bfa931a66fba/tapestry5-jquery-3.3.0.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/com.starpoint/sp-common/1.0.0-SNAPSHOT/jar/e8653084ba59b602d0564262ac4039f9e6d7f7f7/sp-common-1.0.0-SNAPSHOT.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/com.starpoint/querybuilder/1.5.0-SNAPSHOT/jar/a03a6f09ea62695f58fceaf03958d7122e77b81c/querybuilder-1.5.0-SNAPSHOT.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/uk.org.cezary/t5conduit/0.8-SNAPSHOT/jar/189c1724e1c168bc72bc89247258d4f91995db62/t5conduit-0.8-SNAPSHOT.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.oscy/tapestry-zbreadcrumbs/0.0.2/jar/beb7e85644c9cefe471b09d3927d58b991cb36cd/tapestry-zbreadcrumbs-0.0.2.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/tapestry-json/5.3.4/jar/54eacfc1ca2a966b263d409a33564f41e79c33ee/tapestry-json-5.3.4.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/tapestry-func/5.3.4/jar/904a1263d43b0cfd3ea88bc027c95bcb5905cc83/tapestry-func-5.3.4.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/tapestry5-annotations/5.3.4/jar/ba65fa4f9d13bc31d3582e025251cc75c0c4bce0/tapestry5-annotations-5.3.4.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/plastic/5.3.4/jar/3ec4dc756704900bdb268300d586f66d4fee97d4/plastic-5.3.4.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.apache.tapestry/tapestry-ioc/5.3.4/jar/aaedececcf4d63bbbace91ef1853b001ce2f1c45/tapestry-ioc-5.3.4.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/dom4j/dom4j/1.6.1/jar/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.0.Final/jar/6728add2c60f6621c3a77ba71fe6f6b798d14ee0/hibernate-jpa-2.0-api-1.0.0.Final.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/javax.transaction/jta/1.1/jar/2ca09f0b36ca7d71b762e14ea2ff09d5eac57558/jta-1.1.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.hibernate/hibernate-core/3.6.4.Final/jar/e8f0554c7d42b28e3c7a3e604d58bf887aa40cbd/hibernate-core-3.6.4.Final.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/jakarta-regexp/jakarta-regexp/1.4/jar/ea514a179ac1dd7e81c7e6594468b9b9910d298/jakarta-regexp-1.4.jar" />
+            <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.mozilla/rhino/1.7R3/jar/3bff1e632c665f8cf2d438f77a9f4d0758277db5/rhino-1.7R3.jar" />
           </element>
         </element>
         <element id="javaee-facet-resources" facet="junkyard/web/Web" />
@@ -80,6 +100,9 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
+  </component>
+  <component name="GradleSettings">
+    <option name="gradleHome" value="$USER_HOME$/tools/gradle-1.0-milestone-8a" />
   </component>
   <component name="GradleUISettings">
     <setting name="root" />

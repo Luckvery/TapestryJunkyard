@@ -1,0 +1,66 @@
+<t:container xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        >
+
+    <h3>Email Aliases</h3>
+
+    <t:zone t:id="aliasZone" id="aliasZone">
+        <div class="t-invisible"/>
+        <t:if test="showErrorMessage">
+            <div class="error">
+                ${errorMessage}
+            </div>
+        </t:if>
+        <ul>
+            <t:loop source="allAliases" value="emailAlias">
+                <t:if negate="true" test="emailAlias.deleted">
+                    <li>
+                        ${emailAlias.alias}
+                        <!--                            <a t:type="any"
+                           t:id="delete"
+                           context="emailAlias.alias"
+                           t:mixins="zoneUpdater, FAny"
+                           t:event="deleteAlias"
+                           t:clientEvent="click"
+                           t:zone="aliasZone"
+                           t:displayas="button">
+                            <span class="ss_sprite ss_bin"></span>
+                            Delete
+                        </a>-->
+
+                        <a class="nice small radius blue button"
+                           t:type="any"
+                           t:id="delete"
+                           context="emailAlias.alias"
+                           t:mixins="zoneUpdater"
+                           t:event="deleteAlias"
+                           t:clientEvent="click"
+                           t:zone="aliasZone">
+                            <span class="ss_sprite ss_bin"></span>
+                            Delete
+                        </a>
+                    </li>
+                </t:if>
+            </t:loop>
+        </ul>
+    </t:zone>
+
+    <p>
+
+        <t:textfield t:id="newAliasField" value="newAlias"/>
+
+            <button class="nice small radius blue button"
+                    t:id="addAliasButton"
+                    t:type="any"
+                    t:mixins="zoneUpdater"
+                    t:valueFieldId="newAliasField"
+                    t:event="addAlias"
+                    t:clientEvent="click"
+                    t:zone="aliasZone"
+                    t:clear="true"
+                    >
+                Add Alias
+            </button>
+
+    </p>
+
+</t:container>

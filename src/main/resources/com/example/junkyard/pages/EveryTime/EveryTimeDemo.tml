@@ -1,0 +1,12 @@
+<html t:type="layout" title="About junkyard"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+        >
+<head>
+
+</head>
+    <div align="center" class="span4">
+        <span t:type="any" t:mixins="" >
+          Delete...
+        </span>
+    </div>
+</html>

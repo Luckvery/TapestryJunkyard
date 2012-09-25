@@ -1,4 +1,4 @@
-description = "junkyard application"
+    description = "junkyard application"
 
 apply plugin: 'java'
 apply plugin: 'war'
@@ -14,7 +14,7 @@ group = "com.example"
 version = "1.0-SNAPSHOT"
 
 
-loadConfiguration()
+// loadConfiguration()
 
 def loadConfiguration() {
     def environment = hasProperty('env') ? env : 'dev'
@@ -41,18 +41,21 @@ repositories {
     mavenCentral()
 
     // All things JBoss/Javassist/Hibernate
-    mavenRepo url: "http://repository.jboss.org/nexus/content/groups/public/"
+   //  mavenRepo url: "http://repository.jboss.org/nexus/content/groups/public/"
 
     // For stable versions of the tapx libraries
-    mavenRepo url: "http://howardlewisship.com/repository/"
+    // mavenRepo url: "http://howardlewisship.com/repository/"
 
     // For non-stable versions of the tapx libraries
-    mavenRepo url: "http://howardlewisship.com/snapshot-repository/"
+    // mavenRepo url: "http://howardlewisship.com/snapshot-repository/"
 
     // For access to Apache Staging (Preview) packages
-    mavenRepo url: "https://repository.apache.org/content/groups/staging"
+    // mavenRepo url: "https://repository.apache.org/content/groups/staging"
 
+    mavenRepo url: "http://git.starpoint.com/m2"
     mavenRepo url: "http://nexus.devlab722.net/nexus/content/repositories/releases"
+    mavenRepo url: "http://nexus.devlab722.net/nexus/content/repositories/snapshots"
+    mavenLocal()
 
 }
 
@@ -75,53 +78,40 @@ sourceSets {
 
 dependencies {
 
-    compile "org.apache.tapestry:tapestry-core:5.3.1"
+    def tapestryVersion = '5.3.4'
 
     // This adds automatic compression of JavaScript and CSS in production mode:
     compile "org.apache.tapestry:tapestry-yuicompressor:5.3.1"
 
     //
-    compile 'org.got5:tapestry5-jquery:3.0.0'
-
     // Uncomment this to add support for file uploads:
     // compile "org.apache.tapestry:tapestry-upload:5.3.1"
 
     provided "javax.servlet:servlet-api:2.5"
 
-    compile "org.apache.tapestry:tapestry-hibernate:${tapestryVersion}"
+    // compile "org.apache.tapestry:tapestry-hibernate:${tapestryVersion}"
+    compile "org.apache.tapestry:tapestry-core:${tapestryVersion}"
     compile "org.apache.tapestry:tapestry-upload:${tapestryVersion}"
-    compile 'org.got5:tapestry5-jquery:3.0.0'
-    compile 'com.trsvax.bootstrap:tapestry-bootstrap:1.0-SNAPSHOT'
+    compile 'com.trsvax.bootstrap:tapestry-bootstrap:2.0-SNAPSHOT'
+    compile 'org.got5:tapestry5-jquery:3.3.0'
     compile 'org.hibernate:hibernate-validator:4.1.0.Final'
     compile 'org.hibernate:hibernate-commons-annotations:3.2.0.Final'
     compile 'commons-beanutils:commons-beanutils:1.8.3'
     compile 'commons-collections:commons-collections:3.2.1'
-    compile 'commons-dbcp:commons-dbcp:1.2.2'
     compile 'org.apache.commons:commons-email:1.2'
     compile 'commons-lang:commons-lang:2.6'
     compile 'commons-validator:commons-validator:1.3.1'
     compile 'commons-net:commons-net:3.0.1'
     compile 'oro:oro:2.0.8'
-    compile 'jcifs:jcifs:1.3.15'
     compile 'org.apache.poi:poi:3.7'
-    compile 'dnsjava:dnsjava:2.1.1'
     compile 'com.starpoint:sp-common:1.0.0-SNAPSHOT'
-    compile 'com.starpoint:querybuilder:1.0.1-SNAPSHOT'
-
-    groovy 'org.codehaus.groovy:groovy-all:1.7.5'
-    runtime 'org.liquibase:liquibase-core:2.0.3'
-    runtime 'com.h2database:h2:1.3.162'
-    runtime 'mysql:mysql-connector-java:5.1.16'
-
-    /*
-    testCompile "org.codehaus.geb:geb-spock:0.6.2"
-    testCompile "org.seleniumhq.selenium:selenium-firefox-driver:2.15.0"
-    testCompile "org.seleniumhq.selenium:selenium-support:2.15.0"
-    */
-
+    compile 'com.starpoint:querybuilder:1.5.0-SNAPSHOT'
+    compile 'uk.org.cezary:t5conduit:0.8-SNAPSHOT'
+    compile 'org.oscy:tapestry-zbreadcrumbs:0.0.2'
+    groovy 'org.codehaus.groovy:groovy-all:1.8.6'
     testCompile "org.apache.tapestry:tapestry-test:${tapestryVersion}"
-    testCompile "org.spockframework:spock-core:0.6-groovy-1.7-SNAPSHOT"
-    testCompile "org.spockframework:spock-tapestry:0.6-groovy-1.7-SNAPSHOT"
+    testCompile "org.spockframework:spock-core:0.6-groovy-1.8"
+    testCompile "org.spockframework:spock-tapestry:0.6-groovy-1.8"
 
     testRuntime 'javax.servlet:servlet-api:2.5'
 }
@@ -144,5 +134,5 @@ test {
 // TODO: Configure execution mode for jettyRun task
 // File: build.gradle
 task createWrapper(type: Wrapper) {
-    gradleVersion = '1.0-milestone-7'
+    gradleVersion = '1.0-milestone-8a'
 }

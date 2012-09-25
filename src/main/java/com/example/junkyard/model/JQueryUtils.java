@@ -6,7 +6,9 @@ package com.example.junkyard.model;
  * Date: 1/30/12
  * Time: 10:56 AM
  * To change this template use File | Settings | File Templates.
- */import org.apache.tapestry5.Asset;
+ */
+
+import org.apache.tapestry5.Asset;
 import org.apache.tapestry5.ComponentResources;
 import org.apache.tapestry5.func.Mapper;
 import org.apache.tapestry5.json.JSONObject;
@@ -14,7 +16,7 @@ import org.apache.tapestry5.services.javascript.StylesheetLink;
 
 public class JQueryUtils
 {
-    /**
+    /*
      * Merge obj1 with obj2. Obj2 has predominance.
      * @param obj1
      * @param obj2

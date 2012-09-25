@@ -19,27 +19,7 @@ import java.util.Random;
  * Layout component for pages of application junkyard.
  */
 
-@Import(stylesheet = {
-        "context:style/stylesheets/foundation.css",
-        "context:style/stylesheets/globals.css",
-        "context:style/stylesheets/typography.css",
-        "context:style/stylesheets/grid.css",
-        "context:style/stylesheets/ui.css",
-        "context:style/stylesheets/forms.css",
-        "context:style/stylesheets/orbit.css",
-        "context:style/stylesheets/reveal.css",
-        "context:style/stylesheets/mobile.css",
-        "context:style/junkyard.css"
-},
 
-        library = { "context:style/javascripts/jquery.min.js",
-                "context:style/javascripts/modernizr.foundation.js",
-                "context:style/javascripts/jquery.reveal.js",
-                "context:style/javascripts/jquery.orbit-1.4.0.js",
-                "context:style/javascripts/jquery.customforms.js",
-                "context:style/javascripts/jquery.placeholder.min.js",
-                "context:style/javascripts/jquery.tooltips.js",
-                "context:style/javascripts/app.js"} )
 public class Layout
 {
     /**
@@ -62,8 +42,6 @@ public class Layout
 
     @Inject
     private ComponentResources resources;
-    
-
 
     @Property
     @Inject
@@ -125,30 +103,15 @@ public class Layout
     }
 
     @Import(stylesheet = {
+            "context:style/stylesheets/bootstrap.css",
 
-            "context:style/stylesheets/foundation.css",
-            "context:style/stylesheets/globals.css",
-            "context:style/stylesheets/typography.css",
-            "context:style/stylesheets/reveal.css",                   //Modal Dialog Box
-            "context:style/stylesheets/grid.css",                     //Grid
-            "context:style/stylesheets/ui.css",                       //Alerts, Labels, Tooltips, Panels, Tabs, Nav Bar, Tables, Microformats, Pagination, Video
-            "context:style/stylesheets/forms.css",                    //Forms
                                        //Temporary css formating
     },
 
             library = {
 
-                    "context:style/javascripts/jquery.min.js",
-                    "context:style/javascripts/modernizr.foundation.js",
-                    "context:style/javascripts/jquery.reveal.js",
-                    "context:style/javascripts/jquery.orbit-1.4.0.js",
-                    "context:style/javascripts/jquery.customforms.js",
-                    "context:style/javascripts/jquery.placeholder.min.js",
-                    "context:style/javascripts/jquery.tooltips.js",
-                    "context:style/javascripts/validators.js",
-                    "context:style/javascripts/app.js",
-                    "context:style/javascripts/customerror.js",         //A script that overrides the FieldEventManager defined in tapestry.js or validation.js
-                    "context:style/javascripts/junkyard.js"
+
+                    "context:js/junkyard.js"
             })
     public void afterRender(){return;}
     public String getClassForPageName()

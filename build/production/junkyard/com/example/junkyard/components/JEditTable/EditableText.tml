@@ -1,0 +1,51 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+<t:content>
+    <div class="edit" id="div_1">YOLO</div>
+    <div class="edit_area" id="div_2">Lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+        magna aliquam erat volutpat.
+    </div>
+
+      <br/><br/><br/>
+         <div span="7">
+    <t:form id="hell">
+    <table id="example" editurl="/botnets/edit_domain">
+        <thead>
+        <tr>
+            <th>Domain</th>
+            <th >Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td >cheeseburger.com</td>
+            <td><button class="btn btn-danger">Delete</button></td>
+        </tr>
+        <tr>
+            <td >zoobiedoo.com</td>
+            <td><button class="btn btn-danger">Delete</button></td>
+        </tr>
+        <tr>
+            <td >feelbetter.com</td>
+            <td><button class="btn btn-danger">Delete</button></td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr style="display:none;" class="template">
+            <td style="">edit</td>
+            <td>
+                <div class="deleteRow"></div>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="addRow"></div>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+    </t:form>
+         </div>
+</t:content>
+</html>

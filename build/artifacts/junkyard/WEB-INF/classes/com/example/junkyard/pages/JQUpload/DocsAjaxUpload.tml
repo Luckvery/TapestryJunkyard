@@ -1,0 +1,39 @@
+<html
+        t:title="AJAX Uploader"
+        xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+        xmlns:j="tapestry-library:jquery">
+
+
+
+
+
+<div class="contaner">
+
+    <j:ajaxUpload t:id="uploadImage"
+                  t:multiple="true"
+                  t:allowedExtensions="[jpg, png, gif,txt]"
+                  t:sizeLimit="1M"> <!-- The units K, M and G are valid for size limits. Anything else will be treated as 0 -->
+        <noscript>
+            <p>JavaScript must be activated!</p>
+        </noscript>
+    </j:ajaxUpload>
+
+    <t:zone t:id="uploadResult">
+        <div class="row">
+            <div class="twelve columns">
+                <t:if test="message">
+                    <p>
+                        <strong>${message}</strong>
+                    </p>
+                </t:if>
+
+                <t:if test="uploadedFiles">
+                    <h4>Uploaded files</h4>
+
+                    <t:grid source="uploadedFiles"></t:grid>
+                </t:if>
+            </div>
+        </div>
+    </t:zone>
+</div>
+</html>

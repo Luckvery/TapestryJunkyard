@@ -1,0 +1,47 @@
+<html t:type="layout" title="About junkyard"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+<br clear="all"/>
+<div class="span2 alert alert-info">
+    hello world
+</div>
+
+<br clear="all"/>
+<table class="span8" >
+
+
+    <tr>
+        <td class="one">"If a book about failures doesn't sell, is it a success?" - Jerry Seinfeld</td>
+    </tr>
+    <tr>
+        <td class="two">"If a book about failures doesn't sell, is it a success?" - Jerry Seinfeld</td>
+    </tr>
+    <tr>
+        <td class="three">"If a book about failures doesn't sell, is it a success?" - Jerry Seinfeld</td>
+    </tr>
+    <tr>
+        <td class="four">"If a book about failures doesn't sell, is it a success?" - Jerry Seinfeld</td>
+    </tr>
+    <tr>
+        <td class="five">"If a book about failures doesn't sell, is it a success?" - Jerry Seinfeld</td>
+    </tr>
+</table>
+
+<br clear="all"/>
+<br/>
+
+<div id="coolright">
+    <img alt="nice" src="${context:/images/junkyard_header3.jpg}"/>
+</div>
+<div id="coolleft">
+    <img alt="nice" src="${context:/images/junkyard_header7.jpg}"/>
+</div>
+
+<div id="shadows">
+    <img alt="nice" src="${context:/images/junkyard_header2.jpg}"/>
+</div>
+
+
+
+</html>

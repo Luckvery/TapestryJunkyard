@@ -1,0 +1,13 @@
+<html t:type="layout" title="About junkyard"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+        >
+
+<div class="row">
+    <div class="span12">
+        <t:eventlink t:mixins="feventlink" t:event="createReport" t:type="inverse" t:displayas="button" icon="icon-file" value="export"/>
+        <br clear="all"/>
+    </div>
+</div>
+
+
+</html>

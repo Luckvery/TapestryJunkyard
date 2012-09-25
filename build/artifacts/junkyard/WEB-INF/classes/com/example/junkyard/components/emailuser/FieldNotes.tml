@@ -1,0 +1,21 @@
+<t:container xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        >
+
+<h5>Note:</h5>
+<div class="note">
+    <p>
+        Primary E-Mail Address should simply be the destination email box name and not include the domain.
+        For example, joeuser. Not joeuser@randomdomain.com.
+    </p>
+    <p>
+        The Forward Address field has 3 possible values.  Entering a fully qualified e-mail address like
+        someone@someplace.com will forward all email to that address.  Entering a simple name like
+        joeuser will forward all email to joeuser@exchange.starpoint.com.  If you leave this field blank
+        all emails will be sent to the Primary Email Address.
+    </p>
+    <p>
+        E-Mail aliases are additional addresses for the given user. For example, if
+        a user has an alias foobazbat, then all e-mail to foobazbat@starpoint.com would be delivered to that user.
+    </p>
+</div>
+</t:container>

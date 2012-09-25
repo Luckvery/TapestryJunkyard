@@ -2,19 +2,84 @@
       t:sidebarTitle="Framework Version"
       xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
       xmlns:p="tapestry:parameter">
+<div class="span6">
+<table  bgcolor="white">
 
-<table align="center" bgcolor="white" width ="639">
-
-
-   <tr>
-        <td align="center" colspan="2">
+    <tr>
+        <td  colspan="2">
             <hr></hr>
         </td>
     </tr>
     <tr>
-        <td align="center" >
+        <td  >
 
-            <t:pagelink t:id="AjaxForm" class="nice medium radius black button" page="ajaxforms/Ajaxdemo" >Ajax Forms Demo</t:pagelink>
+            <t:pagelink t:id="lesscoffee" class="btn btn-success" page="lesscoffee/lesscoffeedemo" >More Fun with Less and CoffeesScript</t:pagelink>
+            <p>    </p>Styling a page using less - the dynamic style sheet language and Coffeescript , the little language that compiles into JavaScript
+        </td>
+        <td align="right" >
+            7/30/12
+        </td>
+    </tr>
+
+    <tr>
+        <td  colspan="2">
+            <hr></hr>
+        </td>
+    </tr>
+    <tr>
+        <td  >
+
+            <t:pagelink t:id="everytime" class="btn btn-success" page="everytime/everytimedemo" >Fun with my EveryTime Mixin</t:pagelink>
+            <p>    </p>Converting Tony's Every Time component to a Mixin
+        </td>
+        <td align="right" >
+            7/30/12
+        </td>
+    </tr>
+
+
+    <tr>
+        <td  colspan="2">
+            <hr></hr>
+        </td>
+    </tr>
+    <tr>
+        <td  >
+
+            <t:pagelink t:id="jeditable" class="btn btn-success" page="jedittable/jeditdemo" >Jedit Demo</t:pagelink>
+            <p>    </p>Make text editable.
+        </td>
+        <td align="right" >
+            2/21/12
+        </td>
+    </tr>
+
+    <tr>
+        <td  colspan="2">
+            <hr></hr>
+        </td>
+    </tr>
+    <tr>
+        <td  >
+
+                 <t:pagelink t:id="AccessGrid"  class="btn btn-success" page="GridDemo/AccessGrid" >Grid/DataTables Demo</t:pagelink>
+
+            <p>    </p>Start with Grid then change this demo to user datatables
+        </td>
+        <td align="right" >
+            2/21/12
+        </td>
+    </tr>
+
+   <tr>
+        <td  colspan="2">
+            <hr></hr>
+        </td>
+    </tr>
+    <tr>
+        <td  >
+
+            <t:pagelink t:id="AjaxForm" class="btn btn-success" page="ajaxforms/Ajaxdemo" >Ajax Forms Demo</t:pagelink>
             <p>    </p>We are testing that ajax forms will work well with Foundation formatting
         </td>
         <td align="right" >
@@ -23,14 +88,14 @@
     </tr>
 
     <tr>
-        <td align="center" colspan="2">
+        <td  colspan="2">
             <hr></hr>
         </td>
     </tr>
     <tr>
-        <td align="center" >
+        <td  >
 
-            <t:pagelink t:id = "CoolForm" class="nice medium radius black button" page="floatingsubmit/coolform" >Floating Submit Button Demo</t:pagelink>
+            <t:pagelink t:id = "CoolForm" class="btn btn-success" page="floatingsubmit/coolform" >Floating Submit Button Demo</t:pagelink>
             <p>    </p>Demoing a floating submit button for Tony
         </td>
         <td align="right" >
@@ -39,14 +104,14 @@
     </tr>
 
     <tr>
-        <td align="center" colspan="2">
+        <td  colspan="2">
             <hr></hr>
         </td>
     </tr>
     <tr>
-        <td align="center" >
+        <td  >
 
-            <t:pagelink t:id = "UploadDemo" class="nice medium radius black button" page="jqupload/jquploader" >JQuery Upload Demo</t:pagelink>
+            <t:pagelink t:id = "UploadDemo" class="btn btn-success" page="jqupload/jquploader" >JQuery Upload Demo</t:pagelink>
             <p>    </p>Drag and drop uploading with Tapestry 5 Jquery-AjaxUpload is easy
         </td>
         <td align="right" >
@@ -54,14 +119,14 @@
         </td>
     </tr>
     <tr>
-        <td align="center" colspan="2">
+        <td  colspan="2">
             <hr></hr>
         </td>
     </tr>
     <tr>
-        <td align="center">
+        <td >
 
-            <t:pagelink t:id = "formsDemo" class="nice medium radius black button" page="formsdemo/foundationformsdemo" >Super Forms Demo</t:pagelink>
+            <t:pagelink t:id = "formsDemo" class="btn btn-success" page="formsdemo/foundationformsdemo" >Super Forms Demo</t:pagelink>
           <p>    </p>Playing with foundation framework:http://foundation.zurb.com/
         </td>
         <td align="right" >
@@ -69,13 +134,13 @@
         </td>
     </tr>
     <tr>
-        <td align="center" colspan="2">
+        <td  colspan="2">
             <hr></hr>
         </td>
     </tr>
     <tr>
-        <td align="center"  >
-            <t:pagelink t:id = "datatables" class="nice medium radius black button"  page="datatables/datatablesdemo" >Datatables Demo</t:pagelink>
+        <td   >
+            <t:pagelink t:id = "datatables" class="btn btn-success"  page="datatables/datatablesdemo" >Datatables Demo</t:pagelink>
             <p>   </p> Working with datatables:http://tapestry5-jquery.com/components/docsdatatables
             <font color="red"> <b>Broken as of 2/1/12</b></font>
         </td>
@@ -84,13 +149,13 @@
         </td>
     </tr>
     <tr>
-        <td align="center" colspan="2">
+        <td  colspan="2">
             <hr></hr>
         </td>
     </tr>
     <tr>
-        <td align="center" >
-            <t:pagelink t:id = "eventdashboard" class="nice medium radius black button"  page="dashboard/eventdashboard" >Event DashBoard</t:pagelink>
+        <td  >
+            <t:pagelink t:id = "eventdashboard" class="btn btn-success"  page="dashboard/eventdashboard" >Event DashBoard</t:pagelink>
             <p>   </p> Attempt to create visual dashboard displaying execution path of various user initiated events
             <font color="red"> <b>Broken as of 2/1/12</b></font>
         </td>
@@ -99,7 +164,7 @@
         </td>
     </tr>
     <tr>
-        <td align="center" colspan="2">
+        <td  colspan="2">
             <hr></hr>
         </td>
     </tr>
@@ -122,7 +187,7 @@
         </td>
     </tr>
 </table>
-
+</div>
 <br></br>
 <br></br><br></br>
 <br></br><br></br>
