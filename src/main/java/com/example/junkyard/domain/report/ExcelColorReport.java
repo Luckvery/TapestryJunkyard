@@ -13,10 +13,27 @@ public class ExcelColorReport {
         final HSSFWorkbook workbook = new HSSFWorkbook();
         final HSSFSheet sheet = workbook.createSheet("Excel Color Demo");
 
-        //Style color of cell
-        final HSSFCellStyle cellStyle = workbook.createCellStyle();
-        cellStyle.setFillPattern(CellStyle.SOLID_FOREGROUND);
-        cellStyle.setAlignment(CellStyle.ALIGN_CENTER);
+        //Style Cell
+        //Header White Bold Style Style
+        final HSSFFont MeiryoUI = workbook.createFont();
+        MeiryoUI.setFontName("Meiryo UI");
+        MeiryoUI.setFontHeightInPoints((short) 10);
+        MeiryoUI.setBoldweight(HSSFFont.BOLDWEIGHT_BOLD);
+        MeiryoUI.setColor(IndexedColors.WHITE.getIndex());
+
+        //Header Center Style (Cells where we print a "x" )
+        final HSSFCellStyle headerCenterStyle = workbook.createCellStyle();
+        headerCenterStyle.setFont(MeiryoUI);
+        headerCenterStyle.setWrapText(false);
+        headerCenterStyle.setAlignment(CellStyle.ALIGN_CENTER);
+
+        //Header Right Style
+        final HSSFCellStyle columnTextStyle = workbook.createCellStyle();
+        headerCenterStyle.setFont(MeiryoUI);
+        headerCenterStyle.setWrapText(true);
+        headerCenterStyle.setFillBackgroundColor(IndexedColors.SKY_BLUE.getIndex());
+        headerCenterStyle.setFillPattern(CellStyle.SOLID_FOREGROUND);
+        headerCenterStyle.setAlignment(CellStyle.ALIGN_CENTER);
 
         short colNum = 0;
         int rowNum = 0;
@@ -25,9 +42,10 @@ public class ExcelColorReport {
 
         for (IndexedColors color : IndexedColors.values()) {
             row = sheet.createRow(rowNum++);
-            cell = row.createCell(colNum++);
-            cellStyle.setFillForegroundColor(color.getIndex());
-            cell.setCellStyle(cellStyle);
+            cell = row.createCell(0);
+            cell.setCellValue(color.getIndex());
+            headerCenterStyle.setFillForegroundColor(color.getIndex());
+            cell.setCellStyle(headerCenterStyle);
         }
 
         return workbook;

@@ -1,7 +1,7 @@
 package com.example.junkyard.mixins;
 
+import com.example.junkyard.domain.reference.IconGlyphs;
 import com.starpoint.BusinessException;
-import com.starpoint.instihire.domain.reference.IconGlyphs;
 import org.apache.commons.lang.StringUtils;
 import org.apache.tapestry5.MarkupWriter;
 import org.apache.tapestry5.annotations.*;

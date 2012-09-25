@@ -1,4 +1,4 @@
-package com.example.junkyard.pages.ExcelColor;
+package com.example.junkyard.pages.ExcelColors;
 
 import com.example.junkyard.domain.report.ExcelColorReport;
 import com.example.junkyard.streamresponse.XLSStreamResponse;
